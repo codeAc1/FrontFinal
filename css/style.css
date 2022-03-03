@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .header-top {
+  border-bottom: 1px solid #ececec;
+  font-size: 13px;
+  line-height: 1;
+  padding: 10px 0;
+}
+
+header .header-top .left .header-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .header-top .left .header-info ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+header .header-top .left .header-info ul li:not(:last-child):after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background: #dedfe2;
+}
+
+header .header-top .left .header-info ul li a {
+  color: #7E7E7E;
+  font-weight: 400;
+}
+
+header .header-top .center marquee {
+  font-size: 14px;
+  line-height: 10px;
+  font-weight: 600;
+  color: #7E7E7E;
+  padding: 4px 0;
+}
+
+header .header-top .right .header-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .header-top .right .header-info ul li {
+  margin-right: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7E7E7E;
+}
+
+header .header-top .right .header-info ul li:hover .lang-div {
+  height: 100px;
+}
+
+header .header-top .right .header-info ul li:not(:last-child):after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 10px;
+  background: #dedfe2;
+}
+
+header .header-top .right .header-info ul li .text-phone {
+  color: #3BB77E !important;
+  font-weight: 600;
+}
+
+header .header-top .right .header-info ul li .language {
+  color: #7E7E7E;
+  font-weight: 400;
+}
+
+header .header-top .right .header-info ul li .lang-div {
+  position: absolute;
+  bottom: -110px;
+  left: 5px;
+  padding: 0 15px;
+  width: 200%;
+  height: 0px;
+  -webkit-box-shadow: 0px 5px 6px 0px;
+          box-shadow: 0px 5px 6px 0px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  z-index: -1;
+}
+
+header .header-top .right .header-info ul li .lang-div .lang-item {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 2px 0;
+}
+
+header .header-top .right .header-info ul li .lang-div .lang-item a {
+  position: absolute;
+  color: #7E7E7E;
+  font-size: 14px;
+}
+
+header .header-top .right .header-info ul li .lang-div .lang-item a img {
+  width: 25%;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=style.css.map */

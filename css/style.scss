@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    .header-top {
+        border-bottom: 1px solid #ececec;
+        font-size: 13px;
+        line-height: 1;
+        padding: 10px 0;
+       
+        
+
+        .left {
+
+            .header-info {
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        margin-right: 20px;
+                        position: relative;
+
+                        &:not(:last-child):after {
+                            content: '';
+                            position: absolute;
+                            right: -10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 1px;
+                            height: 10px;
+                            background: #dedfe2;
+                        }
+                        a {
+                            color: #7E7E7E;
+                            font-weight: 400;
+
+                        }
+
+                    }
+                }
+            }
+        }
+        .center {
+
+            marquee {
+                font-size: 14px;
+                line-height: 10px;
+                font-weight: 600;
+                color: #7E7E7E;
+                padding: 4px 0;
+            }
+        }
+        .right {
+            
+            .header-info {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        margin-right: 20px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        color: #7E7E7E;
+                        
+                        &:hover  .lang-div{
+                            height: 100px;
+                        }
+
+                        &:not(:last-child):after {
+                            content: '';
+                            position: absolute;
+                            right: -10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 1px;
+                            height: 10px;
+                            background: #dedfe2;
+
+                        }
+
+                        .text-phone {
+                            color: #3BB77E !important;
+                            font-weight: 600;
+                        }
+                        .language {
+                            color: #7E7E7E;
+                            font-weight: 400;
+                            
+                            
+                        }
+                        .lang-div {
+                            position: absolute;
+                            bottom: -110px;
+                            left: 5px;
+                            padding:0 15px;
+                            width: 200%;
+                            height: 0px;
+                            box-shadow: 0px 5px 6px 0px;
+                            transition: .5s;
+                            overflow: hidden;
+                            border-radius: 5px;
+                            transform: translateY(-10%);
+                            z-index: -1;
+                            
+
+                            .lang-item {
+                                margin-top: 15px;
+                                margin-bottom: 20px;
+                                padding: 2px 0;
+                                
+
+                                a {
+                                    position: absolute;
+                                    color: #7E7E7E;
+                                    font-size: 14px;
+
+                                    img {
+                                        width: 25%;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
