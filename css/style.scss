@@ -368,7 +368,7 @@ header {
     }
     .header-bottom {
         background-color: #3BB77E;
-        padding: 6px;
+        padding-left: 6px;
 
         .left {
             padding: 10px;
@@ -465,11 +465,11 @@ header {
 
         }
         .center {
-            margin-left: 2rem;
+            padding-left: 4rem;
             .navbar {
                 .box {
 
-                    width: 10% ;
+                    width: 10%;
                     padding: 0 !important;
                     text-align: center;
                     a {
@@ -491,11 +491,83 @@ header {
                         }
                     }
                 }
-                .box-mega{
+                .box-mega {
                     width: 11% !important;
                 }
             }
 
+        }
+        .right{
+            
+            .image{
+                background-color: red;
+                width: 20%;
+                img{
+                    width: 100%;
+                } 
+            }
+            .phone{
+                background-color: blue;
+                width: 50%;
+            }
+            
+        }
+    }
+    .header-mobil{
+        padding: 12px 0;
+        border-bottom: 1px solid #ececec;
+        .left{
+            i{
+                position: relative;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: #7E7E7E;
+            }
+
+        }
+        .center{
+            text-align: center;
+            img{
+                width: 150px;
+                height: 46px;
+            }
+        }
+        .right{
+            text-align: left;
+            .list {
+                position: relative;
+                padding: 0;
+                
+                
+
+                a {
+                    
+                    font-size: 30px;
+                    color: #333;
+                    line-height: 1;
+                    display: inline-block;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        max-width: 25px;
+                    }
+                    .count {
+                        position: absolute;
+                        right: -7px;
+                        top: 0;
+                        color: #ffffff;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 100%;
+                        font-weight: 500;
+                        font-size: 12px;
+                        text-align: center;
+                        line-height: 20px;
+                        background-color: #3BB77E;
+                    }
+                }
+                
+            }
         }
     }
 
@@ -507,4 +579,12 @@ header {
 }
 .CatIconRotate {
     transform: rotate(180deg);
+}
+@media only screen and (min-width: 768px) and (max-width: 1450px){
+    .tablet{
+    display: none !important;
+}
+.header-mobil{
+    display: block !important;
+}
 }
