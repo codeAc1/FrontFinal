@@ -154,7 +154,7 @@ header .header-top .right .header-info ul li .currency {
 header .header-top .right .header-info ul li .currency-div {
   position: absolute;
   bottom: -150px;
-  left: 5px;
+  left: -5px;
   padding: 0 15px;
   width: 100px;
   height: 0;
@@ -203,12 +203,12 @@ header .header-center .center {
   background-color: #fff;
 }
 
-header .header-center .center .left {
+header .header-center .center .search .left {
   padding-left: o;
   position: relative;
 }
 
-header .header-center .center .left::before {
+header .header-center .center .search .left::before {
   content: '';
   position: absolute;
   right: 20px;
@@ -220,7 +220,7 @@ header .header-center .center .left::before {
   background: #dedfe2;
 }
 
-header .header-center .center .left p {
+header .header-center .center .search .left p {
   font-size: 14px;
   font-weight: 500;
   color: #253D4E;
@@ -229,17 +229,17 @@ header .header-center .center .left p {
   cursor: pointer;
 }
 
-header .header-center .center .left p i {
+header .header-center .center .search .left p i {
   margin-left: 10px;
   font-size: 0.7rem;
   color: #969b9e;
 }
 
-header .header-center .center .right {
+header .header-center .center .search .right-search {
   position: relative;
 }
 
-header .header-center .center .right input {
+header .header-center .center .search .right-search input {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -252,32 +252,131 @@ header .header-center .center .right input {
   font-size: 14px;
 }
 
-header .header-center .center .right input:focus {
+header .header-center .center .search .right-search input:focus {
   outline: none;
 }
 
-header .header-center .center .right input::-webkit-input-placeholder {
+header .header-center .center .search .right-search input::-webkit-input-placeholder {
   font-size: 14px;
 }
 
-header .header-center .center .right input:-ms-input-placeholder {
+header .header-center .center .search .right-search input:-ms-input-placeholder {
   font-size: 14px;
 }
 
-header .header-center .center .right input::-ms-input-placeholder {
+header .header-center .center .search .right-search input::-ms-input-placeholder {
   font-size: 14px;
 }
 
-header .header-center .center .right input::placeholder {
+header .header-center .center .search .right-search input::placeholder {
   font-size: 14px;
 }
 
-header .header-center .center .right img {
+header .header-center .center .search .right-search img {
   position: absolute;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   cursor: pointer;
+}
+
+header .header-center .right {
+  width: 38% !important;
+}
+
+header .header-center .right .location {
+  margin: 7px 2px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 16px #c4c8ca69;
+          box-shadow: 0 0 16px #c4c8ca69;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 13px;
+  width: 164px;
+  max-width: unset;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .header-center .right .location:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+header .header-center .right .location a {
+  line-height: 15px;
+  position: relative;
+  color: #3BB77E;
+  font-weight: 300;
+  font-size: 15px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+header .header-center .right .location a .fa-location-dot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .header-center .right .location a .fa-angle-down {
+  color: #253D4E;
+  margin-left: 8px;
+}
+
+header .header-center .right .list {
+  position: relative;
+  padding: 0 0px;
+  margin-left: 1px;
+}
+
+header .header-center .right .list a {
+  font-size: 30px;
+  color: #333;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+
+header .header-center .right .list a img {
+  width: 100%;
+  max-width: 25px;
+}
+
+header .header-center .right .list a .count {
+  position: absolute;
+  right: -7px;
+  top: 0;
+  color: #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #3BB77E;
+}
+
+header .header-center .right .list .atext {
+  font-size: 15px;
+  color: #333;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+
+header .header-center .right .list .atext span {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  font-weight: 500;
+  color: #585858;
 }
 /*# sourceMappingURL=style.css.map */
