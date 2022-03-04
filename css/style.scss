@@ -376,8 +376,6 @@ header {
 
             .catagories {
 
-                
-
                 .catagories-btn {
                     background-color: #FDC040;
                     padding: 6px 6px 6px 10px;
@@ -410,8 +408,7 @@ header {
                     width: 500px;
                     visibility: hidden;
                     opacity: 0;
-                    transition: .5s;
-                    
+                    transition: 0.5s;
 
                     .items {
 
@@ -437,7 +434,7 @@ header {
                                 font-size: 1rem;
                                 font-weight: 600;
                                 transition: 0.2s;
-                                
+
                                 img {
                                     width: 30px;
                                     height: 30px;
@@ -446,14 +443,14 @@ header {
                                 }
                             }
                         }
-                        .show-item{
+                        .show-item {
                             border: none !important;
                             color: #333 !important;
-                            
-                            i{
-                                background-color:#fff;
+
+                            i {
+                                background-color: #fff;
                                 border: 1px solid#3BB77E;
-                                padding: 1px 6px 6px 6px;
+                                padding: 1px 6px 6px;
                                 font-size: 2rem;
                                 border-radius: 50%;
                                 color: #3BB77E;
@@ -467,15 +464,47 @@ header {
             }
 
         }
+        .center {
+            margin-left: 2rem;
+            .navbar {
+                .box {
+
+                    width: 10% ;
+                    padding: 0 !important;
+                    text-align: center;
+                    a {
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 600;
+                        position: relative;
+
+                        img {
+                            left: -25px;
+                            position: absolute;
+                            width: 20px;
+                            height: 21px;
+
+                        }
+                        i {
+                            font-size: 10px;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+                .box-mega{
+                    width: 11% !important;
+                }
+            }
+
+        }
     }
 
 }
-.show{
+.show {
     visibility: visible !important;
     opacity: 1 !important;
-    
-    
+
 }
-.CatIconRotate{
-    transform: rotate(180deg)
+.CatIconRotate {
+    transform: rotate(180deg);
 }

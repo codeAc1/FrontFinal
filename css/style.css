@@ -426,8 +426,8 @@ header .header-bottom .left .catagories .catagories-items {
   width: 500px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header .header-bottom .left .catagories .catagories-items .items .item {
@@ -472,11 +472,44 @@ header .header-bottom .left .catagories .catagories-items .items .show-item {
 header .header-bottom .left .catagories .catagories-items .items .show-item i {
   background-color: #fff;
   border: 1px solid #3BB77E;
-  padding: 1px 6px 6px 6px;
+  padding: 1px 6px 6px;
   font-size: 2rem;
   border-radius: 50%;
   color: #3BB77E;
   margin-right: 10px;
+}
+
+header .header-bottom .center {
+  margin-left: 2rem;
+}
+
+header .header-bottom .center .navbar .box {
+  width: 10%;
+  padding: 0 !important;
+  text-align: center;
+}
+
+header .header-bottom .center .navbar .box a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+header .header-bottom .center .navbar .box a img {
+  left: -25px;
+  position: absolute;
+  width: 20px;
+  height: 21px;
+}
+
+header .header-bottom .center .navbar .box a i {
+  font-size: 10px;
+  margin-left: 8px;
+}
+
+header .header-bottom .center .navbar .box-mega {
+  width: 11% !important;
 }
 
 .show {
