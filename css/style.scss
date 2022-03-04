@@ -403,7 +403,7 @@ header {
                 .catagories-items {
                     position: absolute;
                     top: 80px;
-                    padding: 10px;
+                    padding: 5px;
                     background: #fff;
                     border: 1px solid #BCE3C9;
                     border-radius: 10px;
@@ -444,6 +444,20 @@ header {
                                     margin-right: 5px;
 
                                 }
+                            }
+                        }
+                        .show-item{
+                            border: none !important;
+                            color: #333 !important;
+                            
+                            i{
+                                background-color:#fff;
+                                border: 1px solid#3BB77E;
+                                padding: 1px 6px 6px 6px;
+                                font-size: 2rem;
+                                border-radius: 50%;
+                                color: #3BB77E;
+                                margin-right: 10px;
                             }
                         }
                     }
