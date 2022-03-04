@@ -15,8 +15,7 @@ header {
         font-size: 13px;
         line-height: 1;
         padding: 10px 0;
-       
-        
+        background-color: #ffffff;
 
         .left {
 
@@ -63,7 +62,7 @@ header {
             }
         }
         .right {
-            
+
             .header-info {
                 ul {
                     display: flex;
@@ -77,8 +76,15 @@ header {
                         display: flex;
                         align-items: center;
                         color: #7E7E7E;
-                        
-                        &:hover  .lang-div{
+
+                        &:hover .lang-div {
+                            display: block;
+                            bottom: -110px;
+                            height: 100px;
+                        }
+                        &:hover .currency-div {
+                            display: block;
+                            bottom: -110px;
                             height: 100px;
                         }
 
@@ -101,29 +107,66 @@ header {
                         .language {
                             color: #7E7E7E;
                             font-weight: 400;
-                            
-                            
+
                         }
                         .lang-div {
                             position: absolute;
-                            bottom: -110px;
+                            bottom: -150px;
                             left: 5px;
-                            padding:0 15px;
+                            padding: 0 15px;
                             width: 200%;
-                            height: 0px;
-                            box-shadow: 0px 5px 6px 0px;
-                            transition: .5s;
+                            height: 0;
+                            box-shadow: 0 5px 6px 0;
+                            transition: bottom 0.5s;
                             overflow: hidden;
                             border-radius: 5px;
                             transform: translateY(-10%);
-                            z-index: -1;
-                            
+
+                            background-color: white;
 
                             .lang-item {
                                 margin-top: 15px;
                                 margin-bottom: 20px;
                                 padding: 2px 0;
-                                
+
+                                a {
+                                    position: absolute;
+                                    color: #7E7E7E;
+                                    font-size: 14px;
+
+                                    img {
+                                        width: 25%;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .currency {
+                            color: #7E7E7E;
+                            font-weight: 400;
+
+                        }
+                        .currency-div {
+                            position: absolute;
+                            bottom: -150px;
+                            left: 5px;
+                            padding: 0 15px;
+                            width: 150%;
+                            height: 0;
+                            box-shadow: 0 5px 6px 0;
+                            transition: bottom 0.5s;
+                            overflow: hidden;
+                            border-radius: 5px;
+                            transform: translateY(-10%);
+
+                            background-color: white;
+
+                            .currency-item {
+                                margin-top: 15px;
+                                margin-bottom: 20px;
+                                padding: 2px 0;
 
                                 a {
                                     position: absolute;
@@ -144,5 +187,5 @@ header {
         }
 
     }
-
+    
 }

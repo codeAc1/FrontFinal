@@ -14,6 +14,7 @@ header .header-top {
   font-size: 13px;
   line-height: 1;
   padding: 10px 0;
+  background-color: #ffffff;
 }
 
 header .header-top .left .header-info ul {
@@ -77,6 +78,14 @@ header .header-top .right .header-info ul li {
 }
 
 header .header-top .right .header-info ul li:hover .lang-div {
+  display: block;
+  bottom: -110px;
+  height: 100px;
+}
+
+header .header-top .right .header-info ul li:hover .currency-div {
+  display: block;
+  bottom: -110px;
   height: 100px;
 }
 
@@ -104,20 +113,20 @@ header .header-top .right .header-info ul li .language {
 
 header .header-top .right .header-info ul li .lang-div {
   position: absolute;
-  bottom: -110px;
+  bottom: -150px;
   left: 5px;
   padding: 0 15px;
   width: 200%;
-  height: 0px;
-  -webkit-box-shadow: 0px 5px 6px 0px;
-          box-shadow: 0px 5px 6px 0px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  height: 0;
+  -webkit-box-shadow: 0 5px 6px 0;
+          box-shadow: 0 5px 6px 0;
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
   overflow: hidden;
   border-radius: 5px;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
-  z-index: -1;
+  background-color: white;
 }
 
 header .header-top .right .header-info ul li .lang-div .lang-item {
@@ -133,6 +142,46 @@ header .header-top .right .header-info ul li .lang-div .lang-item a {
 }
 
 header .header-top .right .header-info ul li .lang-div .lang-item a img {
+  width: 25%;
+  margin-right: 5px;
+}
+
+header .header-top .right .header-info ul li .currency {
+  color: #7E7E7E;
+  font-weight: 400;
+}
+
+header .header-top .right .header-info ul li .currency-div {
+  position: absolute;
+  bottom: -150px;
+  left: 5px;
+  padding: 0 15px;
+  width: 150%;
+  height: 0;
+  -webkit-box-shadow: 0 5px 6px 0;
+          box-shadow: 0 5px 6px 0;
+  -webkit-transition: bottom 0.5s;
+  transition: bottom 0.5s;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  background-color: white;
+}
+
+header .header-top .right .header-info ul li .currency-div .currency-item {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 2px 0;
+}
+
+header .header-top .right .header-info ul li .currency-div .currency-item a {
+  position: absolute;
+  color: #7E7E7E;
+  font-size: 14px;
+}
+
+header .header-top .right .header-info ul li .currency-div .currency-item a img {
   width: 25%;
   margin-right: 5px;
 }
