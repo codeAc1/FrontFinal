@@ -187,5 +187,85 @@ header {
         }
 
     }
-    
+
+    .header-center {
+        border-bottom: 1px solid #ececec;
+        padding: 30px 0;
+        background-color: #ffffff;
+
+        .left {
+
+            img {
+                width: 74.5%;
+            }
+        }
+        .center {
+            border: 2px solid #BCE3C9;
+            border-radius: 4px;
+            max-width: 700px;
+            background-color: #fff;
+
+            .left {
+                padding-left: o;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 2px;
+                    height: 20px;
+                    background: #dedfe2;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #253D4E;
+                    padding: 15px;
+                    margin-bottom: 0 !important;
+                    cursor: pointer;
+                    i {
+                        margin-left: 10px;
+                        font-size: 0.7rem;
+                        color: #969b9e;
+                    }
+
+                }
+
+            }
+            .right {
+
+                position: relative;
+
+                input {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 98%;
+                    width: 90%;
+                    left: 0;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 14px;
+                    &:focus {
+                        outline: none;
+                    }
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+                img {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
 }
