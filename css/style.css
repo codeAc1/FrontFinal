@@ -384,7 +384,7 @@ header .header-center .right .list .atext span {
 
 header .header-bottom {
   background-color: #3BB77E;
-  padding-left: 6px;
+  padding: 8px 0;
 }
 
 header .header-bottom .left {
@@ -487,6 +487,19 @@ header .header-bottom .center .navbar .box {
   width: 10%;
   padding: 0 !important;
   text-align: center;
+  position: relative;
+}
+
+header .header-bottom .center .navbar .box:hover .menu-box {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 60px !important;
+}
+
+header .header-bottom .center .navbar .box:hover .shop-box {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 60px !important;
 }
 
 header .header-bottom .center .navbar .box a {
@@ -494,6 +507,7 @@ header .header-bottom .center .navbar .box a {
   font-size: 16px;
   font-weight: 600;
   position: relative;
+  padding: 20px 0;
 }
 
 header .header-bottom .center .navbar .box a img {
@@ -508,12 +522,131 @@ header .header-bottom .center .navbar .box a i {
   margin-left: 8px;
 }
 
+header .header-bottom .center .navbar .box .menu-box {
+  background-color: #fff;
+  position: absolute;
+  width: 250px;
+  top: 60px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0 0 13px #e8e8e8;
+          box-shadow: 0 0 13px #e8e8e8;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+header .header-bottom .center .navbar .box .menu-box .box {
+  width: 200px;
+  margin: 20px 40px;
+}
+
+header .header-bottom .center .navbar .box .menu-box .box a {
+  padding: 4px 0 !important;
+  text-align: left;
+  color: #253D4E;
+  font-size: 14px;
+  color: #7E7E7E;
+  display: block;
+  margin-bottom: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+header .header-bottom .center .navbar .box .menu-box .box a:hover {
+  color: #3BB77E !important;
+}
+
+header .header-bottom .center .navbar .box .shop-box {
+  background-color: #fff;
+  position: absolute;
+  width: 260px;
+  top: 60px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0 0 13px #e8e8e8;
+          box-shadow: 0 0 13px #e8e8e8;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+header .header-bottom .center .navbar .box .shop-box .box {
+  width: 220px;
+  margin: auto;
+  padding: 20px 0 !important;
+}
+
+header .header-bottom .center .navbar .box .shop-box .box a {
+  padding: 4px 0 !important;
+  text-align: left;
+  color: #253D4E;
+  font-size: 14px;
+  color: #7E7E7E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-bottom .center .navbar .box .shop-box .box a:hover {
+  color: #3BB77E !important;
+}
+
+header .header-bottom .center .navbar .box .vendors-box {
+  background-color: #fff;
+  position: absolute;
+  width: 250px;
+  top: 60px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0 0 13px #e8e8e8;
+          box-shadow: 0 0 13px #e8e8e8;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+header .header-bottom .center .navbar .box .vendors-box .box {
+  width: 200px;
+  margin: 20px 40px;
+}
+
+header .header-bottom .center .navbar .box .vendors-box .box a {
+  padding: 4px 0 !important;
+  text-align: left;
+  color: #253D4E;
+  font-size: 14px;
+  color: #7E7E7E;
+  display: block;
+  margin-bottom: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+header .header-bottom .center .navbar .box .vendors-box .box a:hover {
+  color: #3BB77E !important;
+}
+
 header .header-bottom .center .navbar .box-mega {
   width: 11% !important;
 }
 
 header .header-bottom .right .image {
-  background-color: red;
   width: 20%;
 }
 
@@ -522,8 +655,13 @@ header .header-bottom .right .image img {
 }
 
 header .header-bottom .right .phone {
-  background-color: blue;
   width: 50%;
+}
+
+header .header-bottom .right .phone p,
+header .header-bottom .right .phone span {
+  color: #fff;
+  font-size: 12px;
 }
 
 header .header-mobil {

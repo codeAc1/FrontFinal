@@ -368,7 +368,7 @@ header {
     }
     .header-bottom {
         background-color: #3BB77E;
-        padding-left: 6px;
+        padding: 8px 0;
 
         .left {
             padding: 10px;
@@ -472,11 +472,24 @@ header {
                     width: 10%;
                     padding: 0 !important;
                     text-align: center;
+                    position: relative;
+                    &:hover .menu-box {
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                        top: 60px !important;
+                    }
+                    &:hover .shop-box {
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                        top: 60px !important;
+                    }
+
                     a {
                         color: #fff;
                         font-size: 16px;
                         font-weight: 600;
                         position: relative;
+                        padding: 20px 0;
 
                         img {
                             left: -25px;
@@ -490,6 +503,116 @@ header {
                             margin-left: 8px;
                         }
                     }
+                    .menu-box {
+                        background-color: #fff;
+                        position: absolute;
+                        width: 250px;
+                        top: 60px;
+                        border-radius: 10px;
+                        border: 1px solid #ececec;
+                        box-shadow: 0 0 13px #e8e8e8;
+                        visibility: hidden;
+                        transition: 0.4s;
+                        opacity: 0;
+
+                        .box {
+                            width: 200px;
+                            margin: 20px 40px;
+
+                            a {
+
+                                padding: 4px 0 !important;
+                                text-align: left;
+                                color: #253D4E;
+                                font-size: 14px;
+                                color: #7E7E7E;
+                                display: block;
+                                margin-bottom: 4px;
+                                transition: 0.3s;
+                                font-weight: 500;
+                                &:hover {
+                                    color: #3BB77E !important;
+                                }
+
+                            }
+
+                        }
+                    }
+                    .shop-box {
+                        background-color: #fff;
+                        position: absolute;
+                        width: 260px;
+                        top: 60px;
+                        border-radius: 10px;
+                        border: 1px solid #ececec;
+                        box-shadow: 0 0 13px #e8e8e8;
+                        visibility: hidden;
+                        transition: 0.4s;
+                        opacity: 0;
+
+                        .box {
+                            width: 220px;
+                            margin: auto;
+                            padding: 20px 0 !important;
+
+                            a {
+
+                                padding: 4px 0 !important;
+                                text-align: left;
+                                color: #253D4E;
+                                font-size: 14px;
+                                color: #7E7E7E;
+                                display: flex;
+                                margin-bottom: 4px;
+                                transition: 0.3s;
+                                font-weight: 500;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                &:hover {
+                                    color: #3BB77E !important;
+                                }
+
+                            }
+
+                        }
+                    }
+                    .vendors-box {
+                        background-color: #fff;
+                        position: absolute;
+                        width: 250px;
+                        top: 60px;
+                        border-radius: 10px;
+                        border: 1px solid #ececec;
+                        box-shadow: 0 0 13px #e8e8e8;
+                        visibility: hidden;
+                        transition: 0.4s;
+                        opacity: 0;
+
+                        .box {
+                            width: 200px;
+                            margin: 20px 40px;
+
+                            a {
+
+                                padding: 4px 0 !important;
+                                text-align: left;
+                                color: #253D4E;
+                                font-size: 14px;
+                                color: #7E7E7E;
+                                display: block;
+                                margin-bottom: 4px;
+                                transition: 0.3s;
+                                font-weight: 500;
+                                &:hover {
+                                    color: #3BB77E !important;
+                                }
+
+                            }
+
+                        }
+                    }
+
                 }
                 .box-mega {
                     width: 11% !important;
@@ -497,27 +620,30 @@ header {
             }
 
         }
-        .right{
-            
-            .image{
-                background-color: red;
+        .right {
+
+            .image {
                 width: 20%;
-                img{
+                img {
                     width: 100%;
-                } 
+                }
             }
-            .phone{
-                background-color: blue;
+            .phone {
                 width: 50%;
+                p,
+                span {
+                    color: #fff;
+                    font-size: 12px;
+                }
             }
-            
+
         }
     }
-    .header-mobil{
+    .header-mobil {
         padding: 12px 0;
         border-bottom: 1px solid #ececec;
-        .left{
-            i{
+        .left {
+            i {
                 position: relative;
                 font-size: 1.5rem;
                 cursor: pointer;
@@ -525,23 +651,21 @@ header {
             }
 
         }
-        .center{
+        .center {
             text-align: center;
-            img{
+            img {
                 width: 150px;
                 height: 46px;
             }
         }
-        .right{
+        .right {
             text-align: left;
             .list {
                 position: relative;
                 padding: 0;
-                
-                
 
                 a {
-                    
+
                     font-size: 30px;
                     color: #333;
                     line-height: 1;
@@ -566,7 +690,7 @@ header {
                         background-color: #3BB77E;
                     }
                 }
-                
+
             }
         }
     }
@@ -580,11 +704,11 @@ header {
 .CatIconRotate {
     transform: rotate(180deg);
 }
-@media only screen and (min-width: 768px) and (max-width: 1450px){
-    .tablet{
-    display: none !important;
-}
-.header-mobil{
-    display: block !important;
-}
+@media only screen and (min-width: 768px) and (max-width: 1450px) {
+    .tablet {
+        display: none !important;
+    }
+    .header-mobil {
+        display: block !important;
+    }
 }
