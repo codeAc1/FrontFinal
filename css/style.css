@@ -1011,6 +1011,9 @@ header .header-mobil .right .list a .count {
 }
 
 .trending .product-grid .product-cart .pro-bottom .pro-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 5px;
 }
 
