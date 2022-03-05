@@ -758,7 +758,7 @@ header .header-bottom .center .navbar .box .mega-box .items .right-item .menu-ba
           align-items: center;
   background-color: #ffd55a;
   position: absolute;
-  top: 0%;
+  top: 0;
   right: -197%;
 }
 
@@ -850,6 +850,183 @@ header .header-mobil .right .list a .count {
   text-align: center;
   line-height: 20px;
   background-color: #3BB77E;
+}
+
+.first {
+  background-image: url("/img/home-6-bg.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 330px;
+}
+
+.first .first-item {
+  padding: 4rem;
+}
+
+.first .first-item .first-top h2 {
+  color: #253D4E;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px !important;
+  text-align: center !important;
+  font-size: 40px;
+}
+
+.first .first-item .fist-midle {
+  margin-bottom: 1rem;
+}
+
+.first .first-item .fist-midle .input-items input {
+  border: 0;
+  border-radius: 50px 0 0 50px;
+  padding-left: 58px;
+  background: url("../img/search.png") no-repeat 25px center;
+  font-size: 16px;
+  background-color: #fff;
+  height: 64px;
+  outline: none;
+}
+
+.first .first-item .fist-midle .input-items button {
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 19px 40px;
+  color: #ffffff;
+  background-color: #3BB77E;
+  border: 1px solid #29A56C;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: -20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.first .first-item .fist-midle .input-items button:hover {
+  background-color: #29A56C !important;
+}
+
+.first .first-item .first-bottom ul {
+  text-align: center !important;
+  list-style: none;
+  padding-left: 0 !important;
+  width: 97% !important;
+}
+
+.first .first-item .first-bottom li {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+  margin-left: 1rem !important;
+}
+
+.first .first-item .first-bottom li a {
+  color: #253D4E;
+  padding: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.first .first-item .first-bottom li a:hover {
+  color: #29A56C !important;
+}
+
+.first .first-item .first-bottom li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.trending {
+  padding-top: 100px !important;
+}
+
+.trending .trend-text {
+  margin-bottom: 80px !important;
+  text-align: center !important;
+  font-size: 48px;
+  color: #253D4E;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.trending .product-grid .product-cart {
+  margin-bottom: 10rem;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.trending .product-grid .product-cart .pro-top img {
+  width: 100%;
+}
+
+.trending .product-grid .product-cart .pro-bottom {
+  position: relative;
+  border: 1px solid red;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-cat a {
+  color: #adadad;
+  font-size: 12px;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-name a {
+  color: #253D4E;
+  -webkit-transition: .3s;
+  transition: .3s;
+  line-height: 1.2;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-name a:hover {
+  color: #3BB77E;
+}
+
+.trending .product-grid .product-cart .pro-bottom .product-rate i {
+  color: #FDC040;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-by {
+  color: #6c757d !important;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-by a {
+  color: #3BB77E;
+  -webkit-transition: .3s;
+  transition: .3s;
+  line-height: 1.2;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-by a:hover {
+  color: #FDC040;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-price {
+  padding-top: 5px;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-price .new-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3BB77E;
+}
+
+.trending .product-grid .product-cart .pro-bottom .pro-price .old-price {
+  font-size: 14px;
+  color: #adadad;
+  margin: 0 0 0 7px;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .show {
