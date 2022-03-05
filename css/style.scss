@@ -483,8 +483,13 @@ header {
                         opacity: 1 !important;
                         top: 60px !important;
                     }
+                    &:hover .mega-box {
+                        visibility: visible !important;
+                        opacity: 1 !important;
+                        top: 51px !important;
+                    }
 
-                    a {
+                    .nav_link {
                         color: #fff;
                         font-size: 16px;
                         font-weight: 600;
@@ -555,7 +560,7 @@ header {
                             margin: auto;
                             padding: 20px 0 !important;
 
-                            a {
+                            .box_link {
 
                                 padding: 4px 0 !important;
                                 text-align: left;
@@ -568,48 +573,158 @@ header {
                                 font-weight: 500;
                                 justify-content: space-between;
                                 align-items: center;
+                                position: relative;
 
                                 &:hover {
                                     color: #3BB77E !important;
+                                }
+                                .single_product {
+                                    width: 200px;
+                                    height: 160px;
+                                    background-color: red;
+                                    position: absolute;
+                                    right: -207px;
+                                    top: -80px;
+                                    border-radius: 10px;
+                                    a {
+                                        display: block;
+                                    }
+
                                 }
 
                             }
 
                         }
                     }
-                    .vendors-box {
+                    .mega-box {
                         background-color: #fff;
                         position: absolute;
-                        width: 250px;
-                        top: 60px;
-                        border-radius: 10px;
+                        width: 97rem;
+                        top: 65px;
+                        left: -50rem;
+                        border-radius: 0 0 10px 10px;
                         border: 1px solid #ececec;
-                        box-shadow: 0 0 13px #e8e8e8;
+                        box-shadow: 0 10px 13px #e8e8e8;
                         visibility: hidden;
-                        transition: 0.4s;
+                        transition: 0.2s;
                         opacity: 0;
 
-                        .box {
-                            width: 200px;
+                        .items {
+
                             margin: 20px 40px;
 
-                            a {
-
-                                padding: 4px 0 !important;
-                                text-align: left;
-                                color: #253D4E;
-                                font-size: 14px;
-                                color: #7E7E7E;
-                                display: block;
-                                margin-bottom: 4px;
-                                transition: 0.3s;
-                                font-weight: 500;
-                                &:hover {
-                                    color: #3BB77E !important;
+                            .left-items {
+                                .box-item {
+                                    background-color: #ffffff;
+                                    .left-item-link {
+                                        display: block;
+                                        font-size: 17px;
+                                        color: #7E7E7E;
+                                        display: block;
+                                        line-height: 1.4;
+                                        text-align: left;
+                                        font-weight: 600;
+                                        margin-bottom: 10px;
+                                        transition: 0.2s;
+                                        &:hover {
+                                            color: #3BB77E;
+                                        }
+                                    }
+                                    .link-head {
+                                        font-size: 19px;
+                                        font-weight: 700 !important;
+                                        color: #3BB77E;
+                                        margin-bottom: 2rem;
+                                        margin-top: 1rem;
+                                        padding-left: 4px;
+                                        &:hover {
+                                            color: #FDC040 !important;
+                                        }
+                                    }
                                 }
 
                             }
+                            .right-item {
+                                position: relative;
 
+                                .banner {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .menu-banner-content {
+
+                                    position: absolute;
+                                    top: 32px;
+                                    left: 40px;
+                                    h4 {
+                                        text-align: left;
+                                        font-size: 16px;
+
+                                        font-weight: 500;
+                                        margin: 0;
+                                        color: #7E7E7E;
+                                        line-height: 1.2;
+                                    }
+                                    h3 {
+                                        text-align: left;
+                                        font-size: 24px;
+                                        line-height: 1.5;
+                                        margin: 5px 0 11px;
+                                        color: #253D4E;
+                                    }
+                                    .menu-banner-price {
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        span {
+                                            color: #81B13D !important;
+                                        }
+
+                                    }
+                                    .menu-banner-btn {
+                                        &:hover a {
+                                            background-color: #FD6E6E;
+                                        }
+                                        a {
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            color: #ffffff !important;
+                                            border-radius: 26px;
+                                            padding: 12px 22px 14px;
+                                            background-color: #3BB77E;
+                                            margin-top: 20px;
+                                            margin-left: -30px;
+                                            transition: 0.3s;
+                                        }
+
+                                    }
+                                    .menu-banner-discount {
+                                        width: 80px;
+                                        height: 80px;
+                                        line-height: 80px;
+                                        border-radius: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: #ffd55a;
+                                        position: absolute;
+                                        top: 0%;
+                                        right: -197%;
+
+                                        h3 {
+                                            color: #333;
+                                            margin: 0;
+                                            text-align: center;
+                                            font-size: 25px;
+                                            font-weight: 600;
+                                            line-height: 1;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
@@ -634,6 +749,7 @@ header {
                 span {
                     color: #fff;
                     font-size: 12px;
+                    font-weight: 700;
                 }
             }
 
@@ -711,4 +827,10 @@ header {
     .header-mobil {
         display: block !important;
     }
+}
+@media only screen and (min-width: 768px) and (max-width: 1580px) {
+    .searchhidden {
+        display: none !important;
+    }
+
 }
