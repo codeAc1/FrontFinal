@@ -1396,6 +1396,10 @@ header {
         flex: 0 0 auto;
         width: 19%;
     }
+    .col-md-3x {
+        flex: 0 0 auto;
+        width: 24%;
+    }
 }
 @media (max-width: 552px) {
 
@@ -1406,7 +1410,7 @@ header {
     }
 
 }
-@media (max-width: 394px) {
+@media (max-width: 420px) {
 
     .col-6x {
         flex: 0 0 auto;
@@ -1427,8 +1431,8 @@ header {
     }
 
     .pro-cart-mobil {
-        background-color: red !important;
-        padding-bottom: 5rem !important;
+        
+        padding-bottom: 7rem !important;
         .pro-bottom-mobil {
             
             position: absolute !important;

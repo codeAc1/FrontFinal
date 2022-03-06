@@ -1503,6 +1503,12 @@ header .header-mobil .right .list a .count {
             flex: 0 0 auto;
     width: 19%;
   }
+  .col-md-3x {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 24%;
+  }
 }
 
 @media (max-width: 552px) {
@@ -1514,7 +1520,7 @@ header .header-mobil .right .list a .count {
   }
 }
 
-@media (max-width: 394px) {
+@media (max-width: 420px) {
   .col-6x {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -1528,8 +1534,7 @@ header .header-mobil .right .list a .count {
     width: 59%;
   }
   .pro-cart-mobil {
-    background-color: red !important;
-    padding-bottom: 5rem !important;
+    padding-bottom: 7rem !important;
   }
   .pro-cart-mobil .pro-bottom-mobil {
     position: absolute !important;
