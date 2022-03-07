@@ -901,6 +901,7 @@ header {
 
 }
 .trending {
+    
     background-color: #fafbfc;
     padding-top: 100px !important;
     .trend-text {
@@ -1196,6 +1197,7 @@ header {
 .deals {
     background-color: #fafbfc;
     padding-top: 100px !important;
+    padding-bottom: 2rem;
 
     .deals-text {
         padding-bottom: 80px !important;
@@ -1365,84 +1367,170 @@ header {
 
 }
 
-//For js------------------------------------------------
-.show {
-    visibility: visible !important;
-    opacity: 1 !important;
-
-}
-.CatIconRotate {
-    transform: rotate(180deg);
-}
-
-//Media--------------------------------------------------------------------------
-@media only screen and (min-width: 768px) and (max-width: 1450px) {
-    .tablet {
-        display: none !important;
-    }
-    .header-mobil {
-        display: block !important;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1580px) {
-    .searchhidden {
-        display: none !important;
-    }
-
-}
-@media (min-width: 768px) {
-
-    .col-md-2x {
-        flex: 0 0 auto;
-        width: 19%;
-    }
-    .col-md-3x {
-        flex: 0 0 auto;
-        width: 24%;
-    }
-}
-@media (max-width: 552px) {
-
-    .col-6x {
-        flex: 0 0 auto;
-        width: 48%;
-
-    }
-
-}
-@media (max-width: 420px) {
-
-    .col-6x {
-        flex: 0 0 auto;
-        width: 100%;
+footer{
+    margin-top: 6rem;
+    
+    .footer-card{
         
+        
+        .footer-card-top-title{
+            position: relative;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 20px;
+            font-size: 24px;
+            color: #253D4E;
+            font-weight: 700;
+            line-height: 1.2;
 
-    }
-    .first-item {
-
-        padding: 2rem 0 !important;
-        .fist-midle {
-            .input-items {
-                input {
-                    width: 59%;
-                }
+            &::after{
+                content: "";
+                width: 80px;
+                height: 3px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #BCE3C9;
             }
-        }
-    }
-
-    .pro-cart-mobil {
-        
-        padding-bottom: 7rem !important;
-        .pro-bottom-mobil {
             
-            position: absolute !important;
-            .pro-clock {
-                .clock-item {
-                    width: 20%;
+        }
+        .footer-card-bottom{
+            padding-top: 1rem;
+            
+            .footer-card-bottom-box{
+                margin-bottom: 1.5rem;
+                transition: 0.3s;
+                &:hover{
+                    transform: translateY(-6px);
+                }
+                .footer-card-bottom-box-left
+                {
+                    img{
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+                .footer-card-bottom-box-right {
+                    .pro-name {
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin-bottom: 0 !important;
+                        a {
+                            color: #253D4E;
+                            transition: 0.3s;
+                            line-height: 1.2;
+                            &:hover {
+                                color: #3BB77E;
+                            }
+                        };
+                    }
+                    .product-rate {
+                        i {
+                            color: #FDC040;
+                            font-size: 13px;
+                            margin: -2px;
+                        }
+                        span {
+                            font-size: 16px;
+                            color: #B6B6B6 !important;
+                            margin-left: 5px !important;
+    
+                        }
+                    }
+                    .pro-price {
+                        margin-bottom: 4px;
+                        padding-top: 5px;
+    
+                        .new-price {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #3BB77E;
+                        }
+                        .old-price {
+                            font-size: 14px;
+                            color: #adadad;
+                            margin: 6px 0 0 7px;
+                            text-decoration: line-through;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+    
+                    }
                 }
             }
+        }
 
+    }
+    .footer-center{
+        
+
+        .footer-center-card{
+
+            .footer-center-card-items{
+
+                .footer-center-card-items-title{
+                    margin: 15px 0 20px 0;
+                }
+                .footer-center-card-items-list{
+                    list-style: outside none none;
+                    margin: 0;
+                    padding: 0;
+                    min-width: 170px;
+                        li{
+                            display: block;
+                            margin: 0 0 13px;
+                            transition: .3s;
+
+                            &:hover{
+                                
+                                transform: translateX(8px);
+                                
+                            }
+                            &:hover a{
+                                color: #3BB77E;
+                            }
+                            
+                            a{
+                                color: #000000;
+                            }
+                        }
+                }
+            }
+            .footer-center-card-left{
+
+
+                .footer-center-card-left-logo{
+                    margin-bottom: 30px !important;
+                    margin-top: 30px;
+                    
+                        a{
+                            img{
+                            width: 80%
+                        }
+                        }
+
+                        p{
+                            font-size: 16px;
+                            color: #253D4E;
+                            font-weight: 400;
+                            line-height: 24px;
+                            margin-bottom: 5px;
+                            margin-top: 1rem;
+                            
+                        }
+                        
+                    
+                }
+
+                .footer-center-card-left-list{
+                    background-color: red
+                }
+            }
         }
     }
-
 }
+
+
+@import '_media.scss';
+@import '_forjs.scss';
+//@import '_reset.scss';
+
