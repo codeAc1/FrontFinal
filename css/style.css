@@ -2277,6 +2277,13 @@ footer .footer-bottom .footer-bottom-right .footer-bottom-mobile-social-icon a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .footer-bottom .footer-bottom-right .footer-bottom-mobile-social-icon a:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 footer .footer-bottom .footer-bottom-right .footer-bottom-mobile-social-icon a img {
