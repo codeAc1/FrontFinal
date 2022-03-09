@@ -752,7 +752,7 @@ header {
             position: relative;
 
             .catagories {
-                
+
                 .catagories-btn {
                     background-color: #FDC040;
                     padding: 6px 6px 6px 10px;
@@ -1291,7 +1291,7 @@ header {
         line-height: 1.2;
 
     }
-    
+
 }
 .products-grid {
 
@@ -2095,5 +2095,6 @@ footer {
 @import '_forjs.scss';
 @import '_contact.scss';
 @import '_about.scss';
-@import '_shop.scss'
+@import '_shop.scss';
+@import '_products.scss'
 //@import '_reset.scss';
