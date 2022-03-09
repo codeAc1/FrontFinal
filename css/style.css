@@ -3321,6 +3321,11 @@ footer .footer-bottom .footer-bottom-right p {
   position: relative;
 }
 
+#Products .pagination-area .page-link:hover {
+  background-color: #3BB77E;
+  color: white;
+}
+
 #Products .pagination-area .active {
   background: #3BB77E !important;
   color: white;
