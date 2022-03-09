@@ -37,7 +37,6 @@
     .col-6x {
         flex: 0 0 auto;
         width: 100%;
-        
 
     }
     .first-item {
@@ -53,10 +52,10 @@
     }
 
     .pro-cart-mobil {
-        
+
         padding-bottom: 7rem !important;
         .pro-bottom-mobil {
-            
+
             position: absolute !important;
             .pro-clock {
                 .clock-item {
@@ -66,57 +65,74 @@
 
         }
     }
-    #Abut-First{
-        .abut-first{
-        padding: 0px !important;
-    
+    #Abut-First {
+        .abut-first {
+            padding: 0 !important;
+
         }
     }
-    #Office{
+    #Office {
         .box {
             margin-top: 5rem;
-            padding: 0px !important;
-            
+            padding: 0 !important;
+
         }
     }
-    #contact-form{
-        padding: 0px!important;
-        
+    #contact-form {
+        padding: 0;
+
     }
-    #Stay{
-        form{
+    #Stay {
+        form {
             width: 100% !important;
         }
         padding-bottom: 1rem;
-        .stay-left{
-            padding: 0% !important;
-            padding-left: 10px !important;
-            
+        .stay-left {
+            padding: 0 0 10px !important;
 
-            h2{
+            h2 {
                 font-size: 20px !important;
                 margin-top: 20px !important;
             }
 
-            button{
-                
-                margin:  0 !important;
+            button {
+
+                margin: 0 !important;
             }
 
-            input{
-                
+            input {
+
                 width: 50%;
                 margin: 0 !important;
-                
+
             }
         }
     }
 
-    #Featured{
-        .featured-phone{
-          
-           justify-content: center !important;
-              
+    #Featured {
+        .featured-phone {
+
+            justify-content: center !important;
+
         }
+    }
+
+    #Ourteam {
+        padding: 0 !important;
+        .ourteam-title {
+
+            .image-top {
+                width: 30% !important;
+            }
+
+        }
+        a {
+            margin-bottom: 1rem;
+        }
+
+        .content-wrapper {
+            margin-bottom: 8rem !important;
+        }
+
     }
 }
