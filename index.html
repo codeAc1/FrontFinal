@@ -12,6 +12,7 @@
             rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/x-icon" href="./img/search.svg">
         <title>Nest - Multipurpose eCommerce HTML Template</title>
@@ -263,7 +264,7 @@
                                             <a href="#">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="#">Contact</a>
+                                            <a href="./contact.html">Contact</a>
                                         </li>
                                         <li>
                                             <a href="#">My Account</a>
@@ -794,7 +795,7 @@
                                         </div>
                                     </div>
                                     <div class="box col-md-1">
-                                        <a class="nav_link" href="">Contact</a>
+                                        <a class="nav_link" href="./contact.html">Contact</a>
                                     </div>
 
                                 </div>
@@ -1754,7 +1755,7 @@
                 <h1 class="deals-text text-center">Deals of the day</h1>
                 <div class="container-fluid">
                     <div class="row product-grid justify-content-between">
-                        <div class="product-cart pro-cart-mobil col-md-3x col-6x">
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="product-cart pro-cart-mobil col-md-3x col-6x ">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/banner-5.png" alt="">
                             </div>
@@ -1805,7 +1806,7 @@
                             </div>
 
                         </div>
-                        <div class="product-cart pro-cart-mobil col-md-3x col-6x">
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"  class="product-cart pro-cart-mobil col-md-3x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/banner-5.png" alt="">
                             </div>
@@ -1856,7 +1857,7 @@
                             </div>
 
                         </div>
-                        <div class="product-cart pro-cart-mobil col-md-3x col-6x">
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" class="product-cart pro-cart-mobil col-md-3x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/banner-5.png" alt="">
                             </div>
@@ -1907,7 +1908,7 @@
                             </div>
 
                         </div>
-                        <div class="product-cart pro-cart-mobil col-md-3x col-6x">
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700" class="product-cart pro-cart-mobil col-md-3x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/banner-5.png" alt="">
                             </div>
@@ -2522,15 +2523,19 @@
                     <div class="container-fluid">
                         <div class="row align-items-center justify-content-between">
                             <div class="footer-bottom-left col-md-4">
-                                <p class="font-sm mb-0">© 2021, <strong class="text-brand">Nest</strong> - HTML Ecommerce Template <br>All rights reserved</p>
+                                <p class="font-sm mb-0">© 2021,
+                                    <strong class="text-brand">Nest</strong>
+                                    - HTML Ecommerce Template
+                                    <br>All rights reserved</p>
                             </div>
-                            <div class="footer-bottom-center d-md-inline-flex col-md-4 text-center d-none d-md-block">
+                            <div
+                                class="footer-bottom-center d-md-inline-flex col-md-4 text-center d-none d-md-block">
                                 <div class="footer-bottom-center-left d-md-inline-flex">
-                                    <img src="./img/phone-call.svg" >
+                                    <img src="./img/phone-call.svg">
                                     <p>1900 - 6666<span>Working 8:00 - 22:00</span></p>
                                 </div>
                                 <div class="footer-bottom-center-right d-md-inline-flex">
-                                    <img src="./img/phone-call.svg" >
+                                    <img src="./img/phone-call.svg">
                                     <p>1900 - 8888<span>24/7 Support Center</span></p>
                                 </div>
                             </div>
@@ -2547,11 +2552,15 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </footer>
     </body>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/opennav.js"></script>
     <script src="js/main.js"></script>
 </html>
