@@ -81,5 +81,42 @@
     }
     #contact-form{
         padding: 0px!important;
+        
+    }
+    #Stay{
+        form{
+            width: 100% !important;
+        }
+        padding-bottom: 1rem;
+        .stay-left{
+            padding: 0% !important;
+            padding-left: 10px !important;
+            
+
+            h2{
+                font-size: 20px !important;
+                margin-top: 20px !important;
+            }
+
+            button{
+                
+                margin:  0 !important;
+            }
+
+            input{
+                
+                width: 50%;
+                margin: 0 !important;
+                
+            }
+        }
+    }
+
+    #Featured{
+        .featured-phone{
+          
+           justify-content: center !important;
+              
+        }
     }
 }
