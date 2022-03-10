@@ -243,6 +243,9 @@ ul {
 }
 
 header {
+    // position: fixed;
+    // width: 100%;
+    z-index: 999;
     .header-top {
         border-bottom: 1px solid #ececec;
         font-size: 13px;
@@ -424,6 +427,7 @@ header {
     }
 
     .header-center {
+        
         border-bottom: 1px solid #ececec;
         padding: 30px 0;
         background-color: #ffffff;

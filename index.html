@@ -466,9 +466,9 @@
                                     <div class="list  col-md-2">
                                         <a href="#">
                                             <img class="compareSvg" alt="" src="./img/icon-cart.svg">
-                                            <span class="count">2</span>
+                                            <span id="ProCount" class="count">0</span>
                                         </a>
-                                        <a href="#" class="atext">
+                                        <a href="./cart.html" class="atext">
                                             <span class="text">Cart</span>
                                         </a>
 
@@ -880,12 +880,12 @@
             </div>
 
         </section>
-        <section  class="trending">
+        <section class="trending">
             <div class="container-fluid">
                 <h1 class="trend-text text-center">Trending items</h1>
                 <div class="container-fluid">
                     <div id="ProList" class="row products-grid justify-content-between">
-                        <div class="product-cart col-md-2x col-6x">
+                        <div data-id="1" class="product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-1-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-1-2.jpg" alt="">
@@ -903,7 +903,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star-half-stroke"></i>
-                                    <span>(4.0)</span>
+                                    <span>(3.0)</span>
                                 </div>
                                 <div class="pro-by">
                                     <span>By<a href="">
@@ -928,7 +928,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="2"class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-2-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-2-2.jpg" alt="">
@@ -971,7 +971,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="3" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-3-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-3-2.jpg" alt="">
@@ -1014,7 +1014,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="4" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-4-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-4-2.jpg" alt="">
@@ -1057,7 +1057,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div  data-id="5" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-5-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-5-2.jpg" alt="">
@@ -1100,7 +1100,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class="product-cart col-md-2x col-6x">
+                        <div data-id="6" class="product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-6-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-6-2.jpg" alt="">
@@ -1143,7 +1143,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="7" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-7-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-7-2.jpg" alt="">
@@ -1186,7 +1186,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="8" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-8-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-8-2.jpg" alt="">
@@ -1229,7 +1229,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="9" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-9-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-9-2.jpg" alt="">
@@ -1272,7 +1272,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="10" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-10-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-10-2.jpg" alt="">
@@ -1315,7 +1315,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class="product-cart col-md-2x col-6x">
+                        <div data-id="11" class="product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-1-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-1-2.jpg" alt="">
@@ -1358,7 +1358,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="12" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-2-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-2-2.jpg" alt="">
@@ -1401,7 +1401,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="13" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-3-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-3-2.jpg" alt="">
@@ -1444,7 +1444,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="14" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-4-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-4-2.jpg" alt="">
@@ -1487,7 +1487,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="15" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-5-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-5-2.jpg" alt="">
@@ -1530,7 +1530,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class="product-cart col-md-2x col-6x">
+                        <div data-id="16" class="product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-6-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-6-2.jpg" alt="">
@@ -1573,7 +1573,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="17" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-7-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-7-2.jpg" alt="">
@@ -1616,7 +1616,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="18" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-8-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-8-2.jpg" alt="">
@@ -1659,7 +1659,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="19" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-9-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-9-2.jpg" alt="">
@@ -1702,7 +1702,7 @@
                                 <i class="fa-regular fa-eye"></i>
                             </div>
                         </div>
-                        <div class=" product-cart col-md-2x col-6x">
+                        <div data-id="20" class=" product-cart col-md-2x col-6x">
                             <div class="pro-top">
                                 <img class="image-front" src="./img/product-10-1.jpg" alt="">
                                 <img class="image-back" src="./img/product-10-2.jpg" alt="">

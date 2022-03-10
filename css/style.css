@@ -306,6 +306,10 @@ ul {
   opacity: 0.8;
 }
 
+header {
+  z-index: 999;
+}
+
 header .header-top {
   border-bottom: 1px solid #ececec;
   font-size: 13px;
