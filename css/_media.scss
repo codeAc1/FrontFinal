@@ -95,7 +95,7 @@
                 margin-top: 20px !important;
                 padding-left: 1rem;
             }
-            p{
+            p {
                 padding-left: 1rem;
             }
             button {
@@ -116,7 +116,6 @@
         .featured-phone {
 
             justify-content: center !important;
-            
 
         }
     }
@@ -139,9 +138,142 @@
         }
 
     }
-    #Archive-header{
+    #Archive-header {
         padding: 40px 10px !important;
     }
+    #Cart {
+        .card-box {
 
-    
+            .cart-main {
+
+                .cart-header {
+
+                    display: none !important;
+                    .cart-header-left {
+                        display: flex !important;
+                        input {
+
+                            margin-right: 1rem !important;
+                        }
+
+                        span {
+                            font-size: 16px !important;
+                        }
+                    }
+
+                    .cart-header-right {
+                        display: flex !important;
+                        .cart-header-right-text {
+                            background-color: #ececec;
+                            padding: 0;
+                            font-family: "Quicksand", sans-serif;
+                            font-size: 12px !important;
+                            font-weight: 700;
+                            color: #253D4E;
+                            margin-left: 0 !important;
+                            transform: rotate(50deg);
+                        }
+                    }
+
+                }
+                .cart-body {
+                    display: block !important;
+
+                    .cart-body-left {
+                        width: 100% !important;
+
+                        display: block !important;
+                        text-align: center;
+                        input {
+                            display: none;
+                            margin-right: 1rem;
+                        }
+                        .pro-image {
+                            max-width: 100% !important;
+                        }
+                        .pro-detail {
+                            margin-left: 0 !important;
+                            margin-top: 1rem;
+                        }
+
+                    }
+                    .cart-body-right {
+                        width: 100% !important;
+                        display: block !important;
+                        text-align: center;
+                        .pro-price {
+                            margin-bottom: 1rem !important;
+                            display: flex;
+                            justify-content: center;
+                            h4 {
+                                margin: auto;
+                                transform: translateX(-50%);
+
+                            }
+                            h6 {
+                                margin-right: auto;
+                            }
+                        }
+                        .pro-quantity {
+                            margin-bottom: 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            h6 {
+                                margin-right: auto;
+                            }
+                            input {
+                                margin: auto;
+                                transform: translateX(-25%);
+
+                            }
+
+                        }
+                        .pro-subtotal {
+                            margin-bottom: 1rem !important;
+                            display: flex;
+                            justify-content: center;
+                            h4 {
+                                margin: auto;
+                                transform: translateX(-60%);
+
+                            }
+                            h6 {
+                                margin-right: auto;
+
+                            }
+                        }
+                        .pro-remove {
+                            margin-bottom: 1rem !important;
+                            display: flex;
+                            justify-content: right;
+
+                            button {
+                                i {
+                                    font-size: 2rem !important;
+
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+        .products-subtotal{
+            width: 92% !important;
+            margin-top: 1rem !important;
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+            .estimate-for
+            {
+                h1{
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
+
 }
