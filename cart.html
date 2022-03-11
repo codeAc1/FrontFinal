@@ -877,15 +877,15 @@
                             <h1 class="cart-head">Your Cart</h1>
                             <div class="d-flex justify-content-between">
                                 <h6 class="text-body">There are
-                                    <span class="text-count">3</span>
+                                    <span id="Total_Counts" class="text-count">0</span>
                                     products in your cart</h6>
                                 <h6 class="text-body">
-                                    <a href="#" class="text-muted text-clear">
+                                    <a href="#" id="RemoveAllCart" class="text-muted text-clear">
                                         <i class="fa-solid fa-trash-can"></i>Clear Cart</a>
                                 </h6>
                             </div>
                         </div>
-                        <div  class="cart-main">
+                        <div class="cart-main">
                             <div class="cart-header d-flex justify-content-between align-items-center">
                                 <div class="cart-header-left">
                                     <input type="checkbox" name="" id="">
@@ -899,65 +899,25 @@
                                     <span class="cart-header-right-text">Remove</span>
                                 </div>
                             </div>
-                            <div id="Cart_Main" class="pro-boxs">
-                                <div class="cart-body d-flex justify-content-between align-items-center">
-                                    <div class="cart-body-left d-flex align-items-center">
-                                        <div class="pro-check"><input type="checkbox" name="" id=""></div>
-                                        <div class="pro-image"><img src="./img/product-1-1.jpg" alt=""></div>
-                                        <div class="pro-detail">
-                                            <a class="pro-name" href="">Field Roast Chao Cheese Creamy Original</a>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <span class="pro-rait-text">(4.0)</span>
-                                        </div>
-
-                                    </div>
-                                    <div class="cart-body-right d-flex align-items-center justify-content-between">
-                                        <div class="pro-price">
-                                            <h6 class="d-block d-md-none">Price</h6>
-                                            <h4 class="pro-price-value">
-                                                <span>$</span>2.51</h4>
-                                        </div>
-                                        <div class="pro-quantity">
-                                            <h6 class="d-block d-md-none">Stock</h6>
-                                            <input class="pro-quantity-value" type="number" min="1" value="1">
-                                        </div>
-                                        <div class="pro-subtotal">
-                                            <h6 class="d-block d-md-none">Total Price</h6>
-                                            <h4 class="pro-subtotal-value">
-                                                <span>$</span>2.51</h4>
-                                        </div>
-                                        <div class="pro-remove">
-                                            <button class="pro-remove-btn">
-                                                <i class="fa-solid fa-trash-can"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                
-                            </div>
+                            <div id="Cart_Main" class="pro-boxs"></div>
                             <div class="cart-footer d-flex justify-content-between align-items-center">
                                 <div class="cart-footer-left">
                                     <button>
                                         <i class="fa-solid fa-left-long"></i>Continue Shopping</button>
                                 </div>
                                 <div class="cart-footer-right">
-                                    <button>
+                                    <button id="UpdateCart">
                                         <i class="fa-solid fa-arrows-rotate"></i>Update Cart</button>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="products-subtotal col-md-4">
+                    <div id="Product_Sub" class="products-subtotal col-md-4">
                         <div class="subtotal-table">
                             <div class="subtotal">
-                                <h6>Subtotal</h6>
-                                <h1 class="totalPrice">$289</h1>
+                                <h6>Total Amount</h6>
+                                <h1 id="TotalPriceSub" class="totalPrice">$0</h1>
                             </div>
                             <div class="empty"></div>
                             <div class="shipping">
@@ -970,8 +930,8 @@
                             </div>
                             <div class="empty"></div>
                             <div class="total">
-                                <h6>Total</h6>
-                                <h1 class="totalPrice">$289</h1>
+                                <h6>Total Count</h6>
+                                <h1 id="Total_Count" class="totalPrice">0</h1>
                             </div>
                         </div>
                         <a href="#">Proceed To Checkout

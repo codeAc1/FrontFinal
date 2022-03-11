@@ -47,28 +47,12 @@ function CountBasket() {
     let countItem = basket.length
     document.getElementById("ProCount").innerText = countItem;
     
+    
 }
 CountBasket();
 
 
 
-// let ProductList =document.querySelectorAll("#ProList .product-cart .pro-bottom .add-cart")
-// for(AddCartBtn of ProductList){
-//     AddCartBtn.addEventListener("click",function(e){
-//         e.preventDefault()
-//         let data_id = this.parentElement.parentElement.getAttribute("data-id");
-//         let pro_name=this.parentElement.firstElementChild.nextElementSibling.firstElementChild.innerText;
-//         let pro_new_price=this.parentElement.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
-//         let pro_rate=this.parentElement.firstElementChild.nextElementSibling.nextElementSibling.lastElementChild.innerText;
-//         let pro_image=this.parentElement.previousElementSibling.firstElementChild.getAttribute("src");
-
-//         let priceN = pro_new_price.substring(1, pro_new_price.length)
-//         let priceNum = Number(priceN)
-
-//         //console.log(priceNum)
-        
-//     })
-// }
 
 
 

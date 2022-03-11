@@ -2,12 +2,13 @@ function BasketDiv() {
 
 
     let products = JSON.parse(localStorage.getItem("basket"));
-    let count = 1;
+    let total_price = 0;
+    let total_count=0;
     for (let product of products) {
         let cart_body =document.createElement("div")
         cart_body.classList.add("cart-body","d-flex","justify-content-between","align-items-center")
-
-
+        cart_body.setAttribute("data-id",product.Id)
+        
 
         let cart_body_left=document.createElement("div");
         cart_body_left.classList.add("cart-body-left","d-flex","align-items-center");
@@ -71,9 +72,6 @@ function BasketDiv() {
         pro_rait.innerText=product.Rate
         pro_detail.append(pro_rait);
 
-
-
-        
 
         let cart_body_right =document.createElement("div");
         cart_body_right.classList.add("cart-body-right","d-flex","align-items-center","justify-content-between")
@@ -150,31 +148,103 @@ function BasketDiv() {
 
         pro_remove_btn.append(pro_remove_btn_i)
 
-
+        total_price+=pro_subtotal_valueN;
+        total_count+=product.Count;
         document.getElementById("Cart_Main").append(cart_body)
-
-
+        document.getElementById("TotalPriceSub").innerText="$"+total_price.toFixed(2);
+        
+        //document.getElementById("Total_Count").innerText=total_count;
+        //document.getElementById("Total_Counts").innerText=total_count;
+        
 
 
         
     }
 
-    
+    Delete_Product()
+    AllProDell()
 }
 
 BasketDiv();
 
 function CountBasket() {
     let basket = JSON.parse(localStorage.getItem("basket"));
-    let countPro = basket.reduce((total, p) => total + p.Count, 0);
+    //let countPro = basket.reduce((total, p) => total + p.Count, 0);
     let countItem = basket.length
     document.getElementById("ProCount").innerText = countItem;
     
 }
 CountBasket();
 
-// let Cart_box =document.getElementById("Cart_Main")
 
-// console.log(Cart_box)
+function Delete_Product(){
+    
+    let Cart_Pro =document.querySelectorAll("#Cart_Main .cart-body-right .pro-remove .pro-remove-btn")
+    for(let elem of Cart_Pro)
+    {
+        elem.addEventListener("click",function(){
+            let data_id = this.parentElement.parentElement.parentElement.getAttribute("data-id");
+            let basket = JSON.parse(localStorage.getItem("basket"));
+            
+            for(let i=0;i<basket.length;i++)
+            {
+                if(basket[i].Id==data_id)
+                {
+                    basket.splice(i,1);
+                    localStorage.setItem('basket',JSON.stringify(basket));
+                    
+                   // location.reload();
+                }
+            }
+            this.parentElement.parentElement.parentElement.remove()
+            updateDiv();
+            
+            
+        })
+       
+    }
+
+}
+
+function updateDiv() {
+    let basket = JSON.parse(localStorage.getItem("basket"));
+    let countPro = basket.reduce((total, p) => total + p.Count, 0);
+    let totalAmount=basket.reduce((total_price,x) => x.Count*(total_price+x.Price),0)
+    document.getElementById("Total_Count").innerText = countPro;
+    document.getElementById("Total_Counts").innerText = countPro;
+    //document.getElementById("TotalPriceSub").innerText = totalAmount;
+    document.getElementById("TotalPriceSub").innerText="$"+totalAmount.toFixed(2);
+    
+}
+updateDiv();
+
+function AllProDell(){
+    let AllDellBtn =document.getElementById("RemoveAllCart");
+    AllDellBtn.addEventListener("click",function(e){
+        e.preventDefault();
+        
+        let basket = JSON.parse(localStorage.getItem("basket"));
+        basket.splice(0,basket.length);
+        localStorage.setItem('basket',JSON.stringify(basket));
+
+        let cart_prod=AllDellBtn.parentElement.parentElement.parentElement.nextElementSibling.firstElementChild.nextElementSibling.children
+
+        for(let elem of cart_prod){
+            elem.parentElement.innerHTML=""
+        }
+        //cart_prod.remove()
+        updateDiv();
+        
+    })
+}
+
+
+
+    
+    
+    
+    
+
+
 
 
