@@ -3754,6 +3754,11 @@ footer .footer-bottom .footer-bottom-right p {
   margin-left: 1rem;
 }
 
+#Cart .card-box .cart-main .cart-empty h1 {
+  color: red;
+  font-size: 200%;
+}
+
 #Cart .card-box .cart-main .cart-body {
   margin-top: 1rem;
   background-color: #fff;

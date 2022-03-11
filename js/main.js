@@ -1,21 +1,21 @@
 
- AOS.init();
+AOS.init();
 
- if (localStorage.getItem("basket") == null) {
+if (localStorage.getItem("basket") == null) {
     localStorage.setItem("basket", JSON.stringify([]));
 }
 
 function AddBasketBtn() {
-    let ProductList =document.querySelectorAll("#ProList .product-cart .pro-bottom .add-cart")
+    let ProductList = document.querySelectorAll("#ProList .product-cart .pro-bottom .add-cart")
     for (addBasket of ProductList) {
         addBasket.addEventListener("click", function (e) {
             e.preventDefault();
             let basket = JSON.parse(localStorage.getItem("basket"));
             let data_id = this.parentElement.parentElement.getAttribute("data-id");
-            let pro_name=this.parentElement.firstElementChild.nextElementSibling.firstElementChild.innerText;
-            let pro_new_price=this.parentElement.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
-            let pro_rate=this.parentElement.firstElementChild.nextElementSibling.nextElementSibling.lastElementChild.innerText;
-            let src=this.parentElement.previousElementSibling.firstElementChild.getAttribute("src");
+            let pro_name = this.parentElement.firstElementChild.nextElementSibling.firstElementChild.innerText;
+            let pro_new_price = this.parentElement.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerText;
+            let pro_rate = this.parentElement.firstElementChild.nextElementSibling.nextElementSibling.lastElementChild.innerText;
+            let src = this.parentElement.previousElementSibling.firstElementChild.getAttribute("src");
             let priceN = pro_new_price.substring(1, pro_new_price.length)
             let priceNum = Number(priceN)
             let existingPro = basket.find(p => p.Id == data_id);
@@ -35,7 +35,12 @@ function AddBasketBtn() {
             }
             localStorage.setItem("basket", JSON.stringify(basket));
             CountBasket();
-            
+            // var childWindow = "http://127.0.0.1:5501/cart.html";
+            // var newTabUrl="http://127.0.0.1:5501/cart.html";
+            // childWindow.location.href=newTabUrl;
+            // var newtab = window.refresh('http://127.0.0.1:5501/cart.html');
+            // newtab.document.location.reload(true);
+
         })
     }
 }
@@ -46,8 +51,8 @@ function CountBasket() {
     let countPro = basket.reduce((total, p) => total + p.Count, 0);
     let countItem = basket.length
     document.getElementById("ProCount").innerText = countItem;
-    
-    
+
+
 }
 CountBasket();
 
@@ -56,7 +61,7 @@ CountBasket();
 
 
 
- 
+
 
 
 

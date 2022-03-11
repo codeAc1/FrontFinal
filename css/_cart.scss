@@ -68,13 +68,19 @@
                 }
 
             }
+            .cart-empty{
+                h1{
+                    color: red;
+                    font-size: 200%;
+                }
+            }
             .cart-body {
                 margin-top: 1rem;
                 background-color: #fff;
                 border: 1px solid #e9ecef;
                 padding: 1rem;
                 border-radius: 1rem;
-
+                
                 .cart-body-left {
                     width: 50%;
 
