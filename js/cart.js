@@ -238,6 +238,15 @@ function AllProDell() {
     })
 }
 
+function Pro_Update(){
+    let Update_Btn=document.getElementById("UpdateCart")
+    Update_Btn.addEventListener("click",function(e){
+        e.preventDefault()
+        alert("ok")
+    })
+}
+Pro_Update()
+
 
 
 
