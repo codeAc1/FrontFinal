@@ -126,6 +126,10 @@ function BasketDiv() {
         pro_quantity_value.classList.add("pro-quantity-value")
         pro_quantity_value.value = product.Count;
 
+        pro_quantity_value.onchange=function() {
+            let Update_Btn=document.getElementById("UpdateCart")
+            Update_Btn.click()
+        }
         pro_quantity.append(pro_quantity_value);
 
 
@@ -215,7 +219,7 @@ function Delete_Product() {
 function updateDiv() {
     let basket = JSON.parse(localStorage.getItem("basket"));
     let countPro = basket.reduce((total, p) => total + p.Count, 0);
-    let totalAmount = basket.reduce((total_price, x) => x.Count * (total_price + x.Price), 0)
+    let totalAmount = basket.reduce((total_price, x) => total_price +(x.Count * (x.Price)), 0)
     document.getElementById("Total_Count").innerText = countPro;
     document.getElementById("Total_Counts").innerText = countPro;
     //document.getElementById("TotalPriceSub").innerText = totalAmount;
@@ -242,10 +246,40 @@ function Pro_Update(){
     let Update_Btn=document.getElementById("UpdateCart")
     Update_Btn.addEventListener("click",function(e){
         e.preventDefault()
-        alert("ok")
+        let basket = JSON.parse(localStorage.getItem("basket"));
+        //let ProQuantity=document.querySelectorAll(".pro-quantity .pro-quantity-value")
+        let Dataid=document.querySelectorAll("#Cart_Main .cart-body")
+
+        for(let dt of Dataid)
+        {
+            let dataids=dt.getAttribute("data-id")
+            let existingPro = basket.find(p => p.Id == dataids);
+
+            let Counts=dt.lastElementChild.firstElementChild.nextElementSibling.lastElementChild.value
+            existingPro.Count=Number(Counts)
+            localStorage.setItem("basket", JSON.stringify(basket));
+            
+            
+
+            let sub_price=dt.lastElementChild.firstElementChild.lastElementChild.innerText
+            let sub_priceNum=sub_price.substring(1,sub_price.length)
+
+
+            let sub_count=dt.lastElementChild.firstElementChild.nextElementSibling.lastElementChild.value
+
+            let new_subtotal=sub_priceNum*sub_count
+            
+            dt.lastElementChild.lastElementChild.previousElementSibling.lastElementChild.innerText="$"+new_subtotal.toFixed(2)
+
+            
+        }
+        updateDiv();
+        
     })
 }
 Pro_Update()
+
+
 
 
 
