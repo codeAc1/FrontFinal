@@ -2309,6 +2309,29 @@ footer .footer-bottom .footer-bottom-right p {
   z-index: 9999;
 }
 
+#scrol-top {
+  opacity: 0;
+  right: 30px;
+  z-index: 9999;
+  bottom: 40px;
+  position: fixed;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#scrol-top a i {
+  background-color: #29A56C;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.scroltopshow {
+  opacity: 1 !important;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
   .tablet {
     display: none !important;
