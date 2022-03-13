@@ -1332,7 +1332,7 @@ header .header-mobil .right .list a .count {
 }
 
 .first {
-  background-image: url("/img/home-6-bg.jpg");
+  background-image: url("../img/home-6-bg.jpg");
   background-size: cover;
   text-align: center;
   height: 330px;
